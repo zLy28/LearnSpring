@@ -8,7 +8,48 @@
         <property name="string" value="HelloSpring!!!"/>
     </bean>
 
+    <bean id="address" class="com.louie.pojo.Address">
+        <property name="city" value="Melbourne"/>
+        <property name="street" value="110 central"/>
+    </bean>
     <bean id="person" class="com.louie.pojo.Person">
         <property name="name" value="Louie"/>
+        <property name="address" ref="address"/>
+        <property name="books">
+            <array>
+                <value>射雕英雄传</value>
+                <value>天龙八部</value>
+                <value>神雕侠侣</value>
+            </array>
+        </property>
+        <property name="cards">
+            <map>
+                <entry key="银行卡" value="5050505020212"/>
+                <entry key="ID卡" value="3123123123123"/>
+                <entry key="学生卡" value="111353"/>
+            </map>
+        </property>
+        <property name="child">
+            <null></null>
+        </property>
+        <property name="games">
+            <set>
+                <value>CS:GO</value>
+                <value>LOL</value>
+                <value>PUBG</value>
+            </set>
+        </property>
+        <property name="hobbies">
+            <list>
+                <value>学习</value>
+                <value>玩游戏</value>
+            </list>
+        </property>
+        <property name="info">
+            <props>
+                <prop key="age">21</prop>
+                <prop key="gender">male</prop>
+            </props>
+        </property>
     </bean>
 </beans>

@@ -9,6 +9,6 @@ public class PersonTest {
     public void personTest() {
         ApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
         Person person = (Person) context.getBean("person");
-        System.out.println(person.getName());
+        System.out.println(person.toString());
     }
 }

@@ -6,7 +6,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="hello" class="com.louie.pojo.HelloSpring">
+    <bean id="hello" class="com.louie.pojo.HelloSpring" scope="singleton">
         <property name="string" value="HelloSpring!!!"/>
     </bean>
 
@@ -57,5 +57,7 @@
 
     <bean id="csgo" class="com.louie.pojo.CSGO" p:player="louie" p:weapon="AK-47"/>
     <bean id="csgo2" class="com.louie.pojo.CSGO" c:player="steve" c:weapon="M4A4"/>
-
+    <bean id="cat" class="com.louie.pojo.Cat" p:name="Kitty"/>
+    <bean id="dog" class="com.louie.pojo.Dog" p:name="XiaoHei"/>
+    <bean id="manwithpet" class="com.louie.pojo.ManWithPet" autowire="byName" p:name="louie"/>
 </beans>

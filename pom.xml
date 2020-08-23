@@ -11,6 +11,7 @@
     <modules>
         <module>learnSpring1</module>
         <module>learnSpring2-annotation</module>
+        <module>learnSpring3-appConfig</module>
     </modules>
 
     <dependencies>

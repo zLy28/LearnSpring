@@ -2,14 +2,14 @@ package com.louie.pojo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Person {
     private String name;
     @Autowired
-    @Qualifier(value = "cat2")
     private Cat cat;
     @Autowired
-    @Qualifier(value = "dog2")
     private Dog dog;
 
     @Override

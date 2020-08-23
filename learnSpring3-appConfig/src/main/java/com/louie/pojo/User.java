@@ -1,13 +1,18 @@
 package com.louie.pojo;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Dog {
+public class User {
+    @Value("Louie")
     private String name;
 
-    public void shout() {
-        System.out.println("wang~~");
+    @Override
+    public String toString() {
+        return "user{" +
+                "name='" + name + '\'' +
+                '}';
     }
 
     public String getName() {
@@ -16,12 +21,5 @@ public class Dog {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    @Override
-    public String toString() {
-        return "Dog{" +
-                "name='" + name + '\'' +
-                '}';
     }
 }

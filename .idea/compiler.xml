@@ -9,6 +9,7 @@
         <module name="learnSpring1" />
         <module name="learnSpring3-appConfig" />
         <module name="learnSpring2-annotation" />
+        <module name="learnSpring4-aop" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="10" />

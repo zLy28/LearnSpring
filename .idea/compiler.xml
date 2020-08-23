@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="learnSpring5-mybatisIntegration" />
         <module name="learnSpring1" />
         <module name="learnSpring3-appConfig" />
         <module name="learnSpring2-annotation" />

@@ -13,6 +13,7 @@
         <module>learnSpring2-annotation</module>
         <module>learnSpring3-appConfig</module>
         <module>learnSpring4-aop</module>
+        <module>learnSpring5-mybatisIntegration</module>
     </modules>
 
     <dependencies>

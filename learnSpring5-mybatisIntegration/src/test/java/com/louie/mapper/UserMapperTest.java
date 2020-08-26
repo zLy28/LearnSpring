@@ -17,7 +17,7 @@ public class UserMapperTest {
     @Test
     public void test() {
         ApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
-        UserMapperImpl userMapperImpl = context.getBean("userMapperImpl", UserMapperImpl.class);
+        UserMapperImpl2 userMapperImpl = context.getBean("userMapperImpl2", UserMapperImpl2.class);
         List<User> users = userMapperImpl.getUser();
         for (User user : users) {
             System.out.println(user);

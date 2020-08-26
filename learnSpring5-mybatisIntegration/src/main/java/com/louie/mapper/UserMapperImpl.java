@@ -16,4 +16,14 @@ public class UserMapperImpl implements UserMapper{
         UserMapper mapper = sqlSessionTemplate.getMapper(UserMapper.class);
         return mapper.getUser();
     }
+
+    public int addUser(User user) {
+        UserMapper mapper = sqlSessionTemplate.getMapper(UserMapper.class);
+        return mapper.addUser(user);
+    }
+
+    public int deleteUser(int id) {
+        UserMapper mapper = sqlSessionTemplate.getMapper(UserMapper.class);
+        return mapper.deleteUser(id);
+    }
 }
